@@ -1,0 +1,28 @@
+url: https://christophgockel.github.io
+name: "Christoph Gockel"
+encoding: utf-8
+safe: true
+
+port: 8080
+host: 0.0.0.0
+show_dir_listing: false
+
+timezone: Europe/London
+markdown: kramdown
+permalink: /posts/:title
+exclude: [README.md, LICENSE, Makefile]
+
+author: "Christoph Gockel"
+email: "cgockel@8thlight.com"
+
+gems:
+  - jekyll-feed
+
+feed:
+  path: atom.xml
+
+collections:
+  hundredwords:
+    values:
+      layout: default
+
