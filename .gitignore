@@ -1,5 +1,7 @@
 .DS*
-_site
 .bundle
 .idea
+
+_site
+node_modules
 

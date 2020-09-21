@@ -67,6 +67,6 @@ We created a customised tool in order to help us and our client in a pragmatic w
 When we say things like &ldquo;_we pick the right tools for the job_,&rdquo; we also acknowledge the fact that the tools that might usually be the right ones do not always fit unconditionally.
 In our case JMeter was just not the right tool anymore because of environmental changes.
 
-In the meantime we brushed up the code during [8th Light's Waza]({{site.baseurl}}/kevin-liddle/2012/05/22/be-a-relentless-programmer.html) and added some more features.
+In the meantime we brushed up the code during [8th Light's Waza](https://8thlight.com/blog/kevin-liddle/2012/05/22/be-a-relentless-programmer.html) and added some more features.
 In case you're interested, it is also available on [GitHub](https://github.com/christophgockel/goony).
 

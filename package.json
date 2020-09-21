@@ -1,0 +1,13 @@
+{
+  "name": "christophgockel.de",
+  "version": "0.1.0",
+  "description": "christophgockel.de",
+  "repository": "git@github.com:christophgockel/christophgockel.de.git",
+  "author": "Christoph Gockel <git@christophgockel.de>",
+  "license": "",
+  "private": true,
+  "dependencies": {
+    "postcss": "^8.0.3",
+    "tailwindcss": "^1.8.9"
+  }
+}
