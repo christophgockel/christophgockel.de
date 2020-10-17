@@ -15,7 +15,7 @@ exclude:
   - node_modules
 
 author: "Christoph Gockel"
-email: "cgockel@8thlight.com"
+email: "blog@christophgockel.de"
 
 gems:
   - jekyll-postcss

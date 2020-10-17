@@ -15,9 +15,17 @@
    {% for post in site.posts %}
    <entry>
       <title>{{ post.title }}</title>
-      <link href="{{site.url}}{{ post.url }}"/>
+      {% if post.external-url %}
+         <link href="{{ post.external-url }}"/>
+      {% else %}
+         <link href="{{ site.url }}{{ post.url }}"/>
+      {% endif %}
       <updated>{{ post.date | date_to_xmlschema }}</updated>
-      <id>{{ site.url }}{{ post.id }}</id>
+      {% if post.external-url %}
+         <id>{{ post.external-url }}</id>
+      {% else %}
+         <id>{{ site.url }}{{ post.id }}</id>
+      {% endif %}
       <content type="html">{{ post.content | xml_escape }}</content>
    </entry>
    {% endfor %}
