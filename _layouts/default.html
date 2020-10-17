@@ -11,32 +11,53 @@
     <title>{{ page.title }} — {{ site.name }}</title>
   </head>
 
-  <body class="{{ page.collection }}">
-    <header>
-      <h1 class="title"><a href="/">{{ site.name }}</a></h1>
+  <body class="{{ page.collection }} bg-gray-100">
+    <header class="main-content flex items-center justify-between py-8">
+      {% if page.url == "/" %}
+        <h1 class="title">
+          <a href="/" class="logo">{{ site.name }}</a>
+        </h1>
+      {% else %}
+        <a href="/" class="back">Back</a>
+      {% endif %}
+
+      <nav>
+        <ul class="flex">
+          <li class="pr-12">
+            <a class="nav-link" href="https://github.com/christophgockel">Writing</a>
+          </li>
+          <li>
+            <a class="nav-link p-0" href="https://twitter.com/christophgockel">Projects</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
-    <nav>
-      <ul>
-        <li class="github">
-          <a href="https://github.com/christophgockel">Github</a>
-        </li>
-        <li class="twitter">
-          <a href="https://twitter.com/christophgockel">Twitter</a>
-        </li>
-        <li class="instagram">
-          <a href="https://instagram.com/christophgockel">Instagram</a>
-        </li>
-        <li class="e-mail">
-          <a href="mailto:&#099;&#104;&#114;&#105;&#115;&#116;&#111;&#112;&#104;&#064;&#099;&#104;&#114;&#105;&#115;&#116;&#111;&#112;&#104;&#103;&#111;&#099;&#107;&#101;&#108;&#046;&#100;&#101;">E-Mail</a>
-        </li>
-      </ul>
-    </nav>
+    <section class="main-content">
+      {{ content }}
+    </section>
 
-    {{ content }}
-
-    <footer>
-      <p>&copy; {{ "now" | date: "%Y" }} Christoph Gockel</p>
+    <footer class="main-content flex items-center justify-between py-8">
+      <p>
+        {% if page.url == "/" %}
+          Thank you for visiting!
+        {% else %}
+          Thank you for reading!
+        {% endif %}
+        <br/>
+        <span role="img" aria-label="victory hand emoji">&#x270c;&#x1f3fb;</span>
+        Christoph Gockel, 2020
+      </p>
+      <nav>
+        <ul class="flex">
+          <li class="pr-12">
+            <a class="nav-link" href="https://github.com/christophgockel">Github</a>
+          </li>
+          <li>
+            <a class="nav-link p-0" href="https://twitter.com/christophgockel">Twitter</a>
+          </li>
+        </ul>
+      </nav>
     </footer>
   </body>
 </html>

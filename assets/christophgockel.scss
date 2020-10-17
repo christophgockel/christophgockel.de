@@ -4,3 +4,49 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .main-content { @apply px-4; }
+  @screen sm { .main-content { @apply px-8; } }
+  @screen md { .main-content { @apply px-20; } }
+  @screen lg { .main-content { @apply px-40; } }
+  @screen xl { .main-content { @apply px-64; } }
+}
+
+p,
+figure.highlight,
+div.highlight {
+  @apply mb-4;
+}
+
+h1 { @apply text-5xl font-bold; }
+h2 { @apply text-4xl font-bold; }
+h3 { @apply text-3xl font-bold; }
+h4 { @apply text-2xl font-bold; }
+h5 { @apply text-xl font-bold; }
+h6 { @apply font-bold; }
+
+.nav-link {
+  @apply block p-4;
+}
+
+.logo {
+  display: block;
+  text-indent: -9999px;
+}
+
+.back {
+  @apply p-6;
+
+  background: url("back-arrow.svg") no-repeat center left;
+  background-size: 1.5rem 1.5rem;
+}
+
+code {
+  @apply text-sm;
+}
+
+p > a > code,
+p > code {
+  @apply font-bold;
+}
