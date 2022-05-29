@@ -1,0 +1,14 @@
+{
+  "name": "christophgockel.de",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "eleventy --serve"
+  },
+  "keywords": [],
+  "author": "Christoph Gockel",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.1"
+  }
+}
