@@ -1,0 +1,25 @@
+---
+eleventyExcludeFromCollections: true
+permalink: /css/styles.css
+---
+
+:root {
+  --primaryH: 193;
+  --primaryS: 30%;
+  --primaryL: 30%;
+
+  --secondaryH: 355;
+  --secondaryS: 81%;
+  --secondaryL: 27%;
+}
+
+* {
+  color: hsl(221, 39%, 11%);
+}
+
+@media all and (max-width: 1024px) {
+  /* overrides for mobile devices */
+  br {
+    display: none;
+  }
+}
