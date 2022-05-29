@@ -1,0 +1,15 @@
+[build]
+  base = ""
+  publish = "_site"
+  command = "npm run build"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[[headers]]
+  for = "/*"
+
+  [headers.values]
+    Content-Security-Policy = "default-src 'self'; script-src 'self'; connect-src 'self'; img-src *; frame-src 'none'; style-src 'self';"
