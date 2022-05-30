@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "start": "eleventy --serve",
-    "build": "eleventy"
+    "build": "ELEVENTY_ENV=production eleventy"
   },
   "keywords": [],
   "author": "Christoph Gockel",
