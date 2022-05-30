@@ -1,0 +1,7 @@
+<nav>
+  <ul>
+{%- for link in navigation.links %}
+    <li><a {% if page.url == link.url %}aria-current="page"{% endif %} href="{{ link.url }}">{{ link.caption }}</a></li>
+{%- endfor %}
+  </ul>
+</nav>

@@ -11,10 +11,49 @@ permalink: /css/styles.css
   --secondaryH: 355;
   --secondaryS: 81%;
   --secondaryL: 27%;
+
+  --text-color: hsl(221, 39%, 11%);
+  --text-color--disabled: hsla(221, 39%, 11%, 30%);
 }
 
 * {
-  color: hsl(221, 39%, 11%);
+  color: var(--text-color); /* dark text override (default is secondary color which I want to keep to focussed highlights) */
+}
+
+body {
+  max-width: 80ch; /* keeping the overall page layout adjusted to the text content (this is essentially ignoring/overriding all media breakpoints) */
+}
+
+body nav ul {
+  display: flex;
+  justify-content: end;
+  list-style-type: none;
+  margin-top: 0;
+}
+
+body nav ul li a {
+  color: var(--text-color--disabled) !important;
+  text-decoration: none !important;
+  padding: 0 1rem;
+}
+
+body nav ul li a:focus {
+  outline: none;
+}
+
+body nav ul li a[aria-current] {
+  color: var(--text-color) !important;
+}
+
+
+a {
+  /* individual override only for links as I do like the color of it, just not for all primary elements */
+
+  --primaryH: 358;
+  --primaryS: 56%;
+  --primaryL: 54%;
+  --primary: hsl(var(--primaryH), var(--primaryS), var(--primaryL));
+  --primary-dark: hsl(var(--primaryH), var(--primaryS), calc(var(--primaryL) * 0.7)); /* used in hover */
 }
 
 @media all and (max-width: 1024px) {

@@ -1,0 +1,6 @@
+{
+  "links": [
+    { "caption": "Home", "url":  "/" },
+    { "caption": "About", "url":  "/about/" }
+  ]
+}
