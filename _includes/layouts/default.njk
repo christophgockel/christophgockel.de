@@ -12,6 +12,10 @@
     <link rel="stylesheet" type="text/css" href="{{ '/css/styles.css' | url }}">
 
     <title>{{ title }} - Christoph Gockel</title>
+
+    {% if site.isProduction %}
+      <script defer data-domain="christophgockel.de" src="/js/script.js"></script>
+    {% endif %}
   </head>
 
   <body>
