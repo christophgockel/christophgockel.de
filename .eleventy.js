@@ -1,6 +1,7 @@
 const eleventyPluginFilesMinifier = require("@sherby/eleventy-plugin-files-minifier");
 
 module.exports = function(eleventyConfig) {
+  eleventyConfig.addPassthroughCopy("robots.txt");
   eleventyConfig.addPassthroughCopy("css/almond.min.css");
 
   eleventyConfig.addPlugin(eleventyPluginFilesMinifier);
