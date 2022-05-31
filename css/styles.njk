@@ -13,7 +13,7 @@ permalink: /css/styles.css
   --secondaryL: 27%;
 
   --text-color: hsl(221, 39%, 11%);
-  --text-color--disabled: hsla(221, 39%, 11%, 30%);
+  --text-color--disabled: hsla(221, 39%, 11%, 60%);
 }
 
 * {
@@ -34,7 +34,8 @@ body nav ul {
 body nav ul li a {
   color: var(--text-color--disabled) !important;
   text-decoration: none !important;
-  padding: 0 1rem;
+  padding: 0 .5rem;
+  margin: 0 .5rem;
 }
 
 body nav ul li a:focus {
@@ -42,6 +43,7 @@ body nav ul li a:focus {
 }
 
 body nav ul li a[aria-current] {
+  border-bottom: 1px solid var(--primary);
   color: var(--text-color) !important;
 }
 
