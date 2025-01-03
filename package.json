@@ -10,7 +10,7 @@
   "author": "Christoph Gockel",
   "license": "MIT",
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.1",
+    "@11ty/eleventy": "^3.0.0",
     "@sherby/eleventy-plugin-files-minifier": "^1.1.1"
   }
 }

@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-- Node (v16+)
+- Node (v22+)
 
 ## Running Locally
 
