@@ -1,6 +1,7 @@
 {
   "links": [
     { "caption": "Home", "url":  "/" },
-    { "caption": "About", "url":  "/about/" }
+    { "caption": "About", "url":  "/about/" },
+    { "caption": "Book", "url":  "/book/" }
   ]
 }

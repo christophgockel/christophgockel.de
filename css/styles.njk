@@ -58,9 +58,47 @@ a {
   --primary-dark: hsl(var(--primaryH), var(--primaryS), calc(var(--primaryL) * 0.7)); /* used in hover */
 }
 
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.aside {
+  max-width: 18rem;
+}
+
+.aside.left {
+  margin-right: 2rem;
+}
+.aside.right {
+  margin-left: 2rem;
+}
+
 @media all and (max-width: 1024px) {
   /* overrides for mobile devices */
   br {
     display: none;
+  }
+
+  .left {
+    float: none;
+  }
+
+  .right {
+    float: none;
+  }
+
+  .aside {
+    max-width: none;
+  }
+
+  .aside.left {
+    margin-right: 0;
+  }
+  .aside.right {
+    margin-left: 0;
   }
 }
