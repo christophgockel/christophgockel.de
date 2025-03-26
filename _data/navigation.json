@@ -2,6 +2,7 @@
   "links": [
     { "caption": "Home", "url":  "/" },
     { "caption": "About", "url":  "/about/" },
-    { "caption": "Book", "url":  "/book/" }
+    { "caption": "Book", "url":  "/book/" },
+    { "caption": "Articles", "url":  "/articles/" }
   ]
 }

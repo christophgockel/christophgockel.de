@@ -22,6 +22,7 @@ permalink: /css/styles.css
 
 body {
   max-width: 80ch; /* keeping the overall page layout adjusted to the text content (this is essentially ignoring/overriding all media breakpoints) */
+  word-wrap: break-word;
 }
 
 body nav ul {
@@ -58,6 +59,15 @@ a {
   --primary-dark: hsl(var(--primaryH), var(--primaryS), calc(var(--primaryL) * 0.7)); /* used in hover */
 }
 
+blockquote {
+  margin: 1rem 3rem;
+  padding: 1rem 1rem 1rem 3rem;
+}
+
+blockquote>:first-child {
+  text-indent: 0;
+}
+
 .left {
   float: left;
 }
@@ -81,6 +91,10 @@ a {
   /* overrides for mobile devices */
   br {
     display: none;
+  }
+
+  blockquote {
+    margin: 0;
   }
 
   .left {
